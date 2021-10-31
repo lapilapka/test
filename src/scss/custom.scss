@@ -1,0 +1,77 @@
+@import '../../node_modules/bootstrap/scss/functions.scss';
+
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 540px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1170px
+);
+
+
+$body-color: #1E1E1E;
+$link-color: #1E1E1E;
+$link-decoration: none;
+
+$font-size-base: 1.4rem;
+
+$h1-font-size: 2.7rem;
+$enable-rfs: false;
+
+$font-family-sans-serif: 'NerisLight', sans-serif;
+
+$headings-font-family: 'NerisSemi-Bold', sans-serif;
+$headings-font-weight: 600;
+$headings-line-height: 60px;
+
+$btn-font-family: 'NerisBlack', sans-serif;
+$btn-font-size: 17px;
+
+$btn-padding-y-lg: 18px;
+$btn-padding-x-lg: 0;
+$btn-font-size-lg: 17px;
+
+$btn-padding-y-sm: 12px;
+$btn-padding-x-sm: 40px;
+$btn-font-size-sm: 0.8rem;
+
+$min-contrast-ratio: 2.5;
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../node_modules/bootstrap/scss/variables.scss';
+
+$custom-blue: #005BAB;
+$custom-red: #EE3124;
+
+$custom-colors: (
+  "custom-blue": $custom-blue,
+  "custom-red": $custom-red,
+);
+
+$colors: map-merge($custom-colors, $colors);
+
+$custom-theme-colors: (
+  "theme-blue": $custom-blue,
+  "theme-red": $custom-red,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/helpers';
+@import '../../node_modules/bootstrap/scss/utilities';
+@import '../../node_modules/bootstrap/scss/utilities/api';
