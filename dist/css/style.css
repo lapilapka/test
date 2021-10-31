@@ -12299,6 +12299,9 @@ progress {
     padding: 22px;
     background: #000000;
     opacity: 0.9;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
   }
   .header-bottombar .nav .menu {
     width: 100%;
@@ -12348,6 +12351,9 @@ progress {
   content: "";
   height: 2px;
   background: #fff;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .header .mobile-menu .burger:before {
   top: 0;
@@ -12367,17 +12373,21 @@ progress {
   height: 2px;
   background: #fff;
 }
+.header .mobile-menu .burger.active:before, .header .mobile-menu .burger.active:after {
+  top: 7px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 .header .mobile-menu .burger.active:before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 7px;
 }
 .header .mobile-menu .burger.active:after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 7px;
   width: 100%;
 }
 .header .mobile-menu .burger.active span {

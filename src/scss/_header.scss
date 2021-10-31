@@ -130,6 +130,7 @@
 
                 background: #000000;
                 opacity: 0.9;
+                transition: all 0.4s linear;
 
                 .menu {
                     width: 100%;
@@ -182,6 +183,7 @@
                 content: '';
                 height: 2px;
                 background: #fff;
+                transition: all 0.2s linear;
 
             }
 
@@ -204,15 +206,18 @@
                 background: #fff;
 
             }
+            &.active:before,
+            &.active:after {
+                top: 7px;
+                transition: all 0.2s linear;
+            }
 
             &.active:before {
                 transform: rotate(45deg);
-                top: 7px;
             }
 
             &.active:after {
                 transform: rotate(-45deg);
-                top: 7px;
                 width: 100%;
             }
 
