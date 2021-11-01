@@ -48,8 +48,6 @@ $btn-font-size-sm: 0.8rem;
 
 $min-contrast-ratio: 2.5;
 
-
-@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '../../node_modules/bootstrap/scss/variables.scss';
 
 $custom-blue: #005BAB;
@@ -69,6 +67,7 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '../../node_modules/bootstrap/scss/mixins';
 @import '../../node_modules/bootstrap/scss/buttons';
 @import '../../node_modules/bootstrap/scss/reboot';
